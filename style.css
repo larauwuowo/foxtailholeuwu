@@ -77,12 +77,11 @@ body {
 }
 
 .animated-thing::before{
-    animation: animate_background 30s linear infinite;
-    
+    animation: animate_background 60s linear infinite;
 }
 
 @keyframes animate_background {
     to{
-        transform: translateX(-10%);
+        transform: translateX(-5%);
     }
 }
