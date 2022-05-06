@@ -1,0 +1,13 @@
+body {
+	background: url(burn.jpg);
+	background-size: cover;
+}
+
+.ME {
+	display: flex;
+	margin: auto;
+}
+
+.ME img {
+	margin: auto;
+}
