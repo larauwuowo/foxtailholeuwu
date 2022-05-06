@@ -67,9 +67,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1000%;
+    width: 4000%;
     height: 100%;
-    background-size: 1% 100%;
     background-image: url(somekindaofmeow.png);
 	background-repeat: repeat;
 	background-origin: padding-box;
@@ -78,12 +77,12 @@ body {
 }
 
 .animated-thing::before{
-    animation: animate_background 1.5s linear infinite
+    animation: animate_background 30s linear infinite
     
 }
 
 @keyframes animate_background {
     to{
-        transform: translateX(-5%)
+        transform: translateX(-10%)
     }
 }
