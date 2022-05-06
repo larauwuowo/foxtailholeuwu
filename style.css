@@ -1,0 +1,48 @@
+body {
+	background: url(bg.jpg);
+	background-size: cover;
+}
+
+.wrapper {
+	margin: auto;
+	height: 1000px;
+	width: 35%;
+	font-family: serif !important;
+}
+
+.header {
+	width: 100%;
+	background: url(header3.jpg);
+	background-size: cover;
+	background-position: center;
+/*flip*/
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.header p {
+	margin: 0;
+	font-family: serif;
+	text-shadow: 0 0 45px rgba(0,0,0,.8), 0 0 10px rgba(0,0,0,.8);
+	font-weight: bold;
+	font-size: 38px;
+	padding: 30px 8px 8px 8px;
+/*flip*/
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.main p {
+	font-size: 13px;
+	font-family: serif;
+	margin-left: 5px;
+}
+
+.nomar {
+	margin-left: 0 !important;
+}
+
+.main h5 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
