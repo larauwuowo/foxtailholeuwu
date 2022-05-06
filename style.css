@@ -10,7 +10,6 @@ body {
     margin-top: 4%;
     width: 35%;
     font-family: serif !important;
-    height: 260px;
 }
 
 .header {
@@ -39,6 +38,7 @@ body {
 .main p {
     font-size: 13px;
     font-family: serif;
+    width: 78%;
 }
 
 .main h5 {
@@ -46,17 +46,17 @@ body {
     margin: 6px;
     font-family: Serif;
     color: #150;
-    transition: .3s;
 }
 
-.main h5 main:hover  {
-    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    background: #ECEFCF;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    transition: .3s;
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.main img {
+    width: 20%;
 }
 
 .buttons {
