@@ -5,7 +5,6 @@ body {
 
 .wrapper {
 	margin: auto;
-	height: 1000px;
 	width: 35%;
 	font-family: serif !important;
 }
@@ -35,14 +34,14 @@ body {
 .main p {
 	font-size: 13px;
 	font-family: serif;
-	margin-left: 5px;
-}
-
-.nomar {
-	margin-left: 0 !important;
 }
 
 .main h5 {
 	font-size: 14px;
-	margin-bottom: 10px;
+	margin: 6px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
 }
