@@ -1,0 +1,41 @@
+body {
+    background: url(battisbg2.jpg);
+    background-size: cover;
+    background-position: 0px 25%;
+}
+
+.maincont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_l {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main_m {
+    width: 40%;
+    height: 1000px;
+}
+
+.main_r {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.main_r img {
+    display: block;
+
+}
+
+.flower {
+	display: flex;
+	justify-content: space-around;
+}
