@@ -1,0 +1,17 @@
+body {
+	background: url(starbackground.gif);
+}
+
+img {
+	margin: auto;
+}
+
+.main {
+	display: flex;
+	width: 50%;
+	color: #ffddff;
+	margin: auto;
+	text-align: center;
+	flex-wrap: nowrap;
+    flex-direction: column;
+}
