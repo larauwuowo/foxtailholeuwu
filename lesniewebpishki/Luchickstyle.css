@@ -1,0 +1,22 @@
+.clouds {
+	background: url(clouds.jpg);
+	height: 300px;
+} 
+
+.underwater {
+	background: url(underwater.jpg);
+	height: 300px;
+}
+
+p {
+	color: #FFF;
+	background: url(waterbg.jpg);
+
+}
+
+.headfish {
+	background: url(fish.gif);
+	height: 211px;
+	width: 100%;
+	background-size: 100% 100%;
+}
