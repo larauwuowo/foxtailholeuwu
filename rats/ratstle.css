@@ -34,7 +34,17 @@ body {
     width: 16%;
     height: 100%;
     background: #FFF;
+    display: flex;
+    flex-direction: column;
 }
+
+.blimg {
+    width: 100%;
+    background: url(ratslogo.png);
+    background-size: cover;
+    height: 20%;
+}
+
 
 .br {
     width: 84%;
