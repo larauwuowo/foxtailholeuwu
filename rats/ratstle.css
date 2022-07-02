@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-size: 0.1%  !important;
+}
+
+.wrapper {
+    width: 70%;
+    height: 70vh;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad1 {
+    width: 12%;
+    height: 100%;
+}
+
+.ad2 {
+    width: 12%;
+    height: 100%;
+}
+
+.main {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    outline: 1px solid #000000;
+}
+
+.bl {
+    width: 16%;
+    height: 100%;
+    background: #FFF;
+}
+
+.br {
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.br1 {
+    width: 100%;
+    height: 20%;
+    background: #FFF;
+}
+
+.br2 {
+    width: 100%;
+    height: 80%;
+    background: #FFF;
+    outline: 1px solid #000000;
+}
+
+.adb {
+    width: 100%;
+    height: 40%;
+    background: #FFF;
+    outline: 1px solid #000000;
+}
+
+/*#demotext {
+color: #000;
+background: #fff;
+text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+color: #000;
+background: #fff;
+}*/
