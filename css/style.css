@@ -1,3 +1,50 @@
 body {
-	background: #670;
+	background: #E0C7FA;
+	color: #242038;
 }
+
+.headtextuwu  {
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	line-height: calc(1.2 * (1 + (1 - 3.5)/25));
+	font-size: 2.1rem;
+	letter-spacing: -.04em;
+	font-weight: 600;
+	margin-top: 1.4vh;
+}
+
+.htuh2 {
+	font-size: 1.1rem;
+	font-weight: 500;
+	font-style: italic;
+	color: #322D4E;
+	margin-top: .6vh;
+}
+
+.color1 {
+	color: #7871AA;
+}
+
+.color2 {
+	color: #8580B3;
+}
+
+::selection {
+    color: #3C3857;
+    background-color: #AFD5AA;
+}
+
+.color1::selection {
+    color: #7871AA;
+    background-color: #AFD5AA;
+}
+
+.color2::selection {
+    color: #8580B3;
+    background-color: #AFD5AA;
+}
+
+/*to do: 
+	- hotdog theme
+	- selection
+	- */
