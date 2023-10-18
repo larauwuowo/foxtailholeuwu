@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fop pet pet her</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background: #000;
+        font-family: 'Space Mono', monospace;
+        color: #8051f0;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-bottom: 20vh;
+        text-align: center;
+    }
+
+    .gif {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .gif1 {
+        transition: 0.2s;
+        backgroundImage: url(fop.gif);
+        aspect-ratio: 1 / 1;
+        background-size: 100% 100%;
+        width: 15%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gif1:active {
+        background: #000;
+        transition: 0.2s;
+        transition-property: transform, margin-top, background-size;
+        margin-top: 1%;
+        background-size: 100% 90%;
+        transform: scaleX(1.2);
+    }
+
+    .gif2 {
+        transition: 0.2s;
+        transition-property: height, margin-top, transform;
+        backgroundImage: url(happifop.gif);
+        height: 100%;
+        opacity: 0;
+        aspect-ratio: 1 / 1;
+        background-size: 100% 100%;
+        width: 100%;
+
+    }
+
+    .gif2:active {
+        opacity: 1;
+    }
+
+    .gif2:active {
+        transition: 0.2s;
+        transition-property: height, margin-top, background-size;
+        background-size: 100% 90%;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <audio id="sfx">
+            <source src="yip.mp3"></audio>
+        <div class="text">
+            <h1>Pet the fop, Pet her</h1>
+            <i>
+                <h2>(just click on her)</h2>
+            </i>
+        </div>
+        <div class="gif">
+            <div id="cat" onclick="playsound()" class="gif1">
+                <div id="fox" class="gif2" id="anim2"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+    const catImg = document.querySelector('#cat')
+    const foxImg = document.querySelector('#fox')
+
+    function loadImage(src) {
+        return new Promise((resolve, reject) => {
+            const img = new Image()
+            img.src = src
+            img.onload = () => resolve(img)
+            img.onerror = () => reject(img)
+        })
+    }
+
+    Promise.all([
+        loadImage('fop.gif'),
+        loadImage('happifop.gif')
+    ]).then(([cat, fox]) => {
+        catImg.style.backgroundImage = `url(${cat.src})`
+        foxImg.style.backgroundImage = `url(${fox.src})`
+    })
+    </script>
+    <script>
+    function playsound() {
+
+        var sfx = document.getElementById("sfx");
+        sfx.autoplay = 'true';
+        sfx.load();
+    }
+    </script>
+</body>
+
+</html>
