@@ -170,7 +170,8 @@
         adjustVolume.call(volume)
 
         function playsound() {
-            sfx.play()
+            sfx.autoplay = 'true'
+            sfx.load()
         }
     </script>
 </body>
