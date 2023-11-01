@@ -29,7 +29,13 @@
         }
 
         h2 {
-            margin-bottom: 20vh;
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 5vh;
+            user-select: none;
             text-align: center;
         }
 
@@ -118,6 +124,7 @@
     </style>
 </head>
 
+
 <body>
     <div class="container">
         <audio id="sfx">
@@ -135,13 +142,31 @@
                 <h2>(just click on her)</h2>
             </i>
         </div>
-        <div class="gif">
+        <div class="speak">
+            <h3 id="message" >rwwrrw...</h3>
+        </div>
+        <div class="gif" type="button" id="btnSearch" value="Search" onclick="GetValue();">
             <div id="img1" onclick="playsound()" class="gif1">
                 <div id="img2" class="gif2" id="anim2"></div>
             </div>
         </div>
     </div>
+
+
+
+
     </div>
+
+    <script>
+        function GetValue()
+{
+    var myarray= new Array("RWWAARWR!!! ♥♥♥","RWERWRAARWWR!!!! ♡♡♡","RWWWWRAAARRWR!!! ♥♡♥....");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+    //alert(random);
+    document.getElementById("message").innerHTML=random;
+}
+    </script>
+
     <script>
     const img1 = document.querySelector('#img1')
     const img2 = document.querySelector('#img2')
